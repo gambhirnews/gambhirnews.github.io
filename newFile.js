@@ -48,14 +48,11 @@ const options = {
 		'X-RapidAPI-Host': 'google-news13.p.rapidapi.com'
 	}
 };
-/*'X-RapidAPI-Key': 'df2928132dmsh5dbfbff115e434cp147e55jsn0132909368cd',
-		'X-RapidAPI-Host': 'google-news13.p.rapidapi.com'
- */
   const response = await fetch(url, options);
   const result = await response.json();
 const news = result.items;
 console.log(news)
-//document.getElementById("clicked").innerHTML = n;
+document.getElementById("clicked").innerHTML = n;
 if(news == undefined){document.getElementById("undefined").innerText = "It Seems that it has too many clicked just contact us on below channels and only saying 'Too many Requests'"}
 else{
     
